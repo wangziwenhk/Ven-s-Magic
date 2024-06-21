@@ -12,20 +12,24 @@ import org.slf4j.LoggerFactory
 
 
 object VensMagic : ModInitializer {
-	private const val MOD_ID = "vens-magic"
-	private const val MOD_NAME = "Vens Magic"
+    const val MOD_ID = "vens-magic"
+    const val MOD_NAME = "Vens Magic"
 
-	private val logger = LoggerFactory.getLogger(MOD_ID)
+    private val logger = LoggerFactory.getLogger(MOD_ID)
 
-	private val MAGIC_GROUP : ItemGroup = FabricItemGroup.builder()
-		.icon{ItemStack(ModItem.MAGIC_DIAMOND)}
-		.displayName(Text.translatable("itemGroup.vens-magic.vens-magic"))
-		.entries{context,entries->entries.add(ModItem.MAGIC_DIAMOND)}
-		.build()
+    val MAGIC_GROUP: ItemGroup = FabricItemGroup.builder()
+        .icon { ItemStack(ModItems.MAGIC_DIAMOND) }
+        .displayName(Text.translatable("itemGroup.$MOD_ID.$MOD_ID"))
+        .entries { _, entries ->
+            entries.add(ModItems.MAGIC_DIAMOND)
+        }
+        .build()
 
-	override fun onInitialize() {
-		logger.info("$MOD_NAME Start")
-		Registry.register(Registries.ITEM_GROUP, Identifier.of("tutorial", "test_group"), MAGIC_GROUP)
-		ModItem.registerItem()
-	}
+    override fun onInitialize() {
+        logger.info("$MOD_NAME Start")
+        //注册物品组
+        Registry.register(Registries.ITEM_GROUP, Identifier.of(MOD_ID, MOD_ID), MAGIC_GROUP)
+        //注册物品
+        ModItems.registerItem()
+    }
 }
