@@ -2,6 +2,8 @@ package com.ven
 
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup
+import net.fabricmc.loader.api.FabricLoader
+import net.fabricmc.loader.api.ModContainer
 import net.minecraft.item.ItemGroup
 import net.minecraft.item.ItemStack
 import net.minecraft.registry.Registries
@@ -14,7 +16,7 @@ import org.slf4j.LoggerFactory
 object VensMagic : ModInitializer {
     const val MOD_ID = "vens-magic"
     const val MOD_NAME = "Vens Magic"
-
+    val modContainer: ModContainer? = FabricLoader.getInstance().getModContainer(MOD_ID).orElse(null)
     private val logger = LoggerFactory.getLogger(MOD_ID)
 
     val MAGIC_GROUP: ItemGroup = FabricItemGroup.builder()
