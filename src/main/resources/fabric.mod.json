@@ -3,9 +3,9 @@
 	"id": "vens-magic",
 	"version": "${version}",
 	"name": "Ven's Magic",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Add some interesting things",
 	"authors": [
-		"Me!"
+		"wangziwenhk"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
