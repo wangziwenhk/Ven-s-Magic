@@ -1,6 +1,6 @@
-package com.ven
+package ven.vens_magic
 
-import com.ven.VensMagic.MOD_ID
+import ven.vens_magic.VensMagic.MOD_ID
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup
 import net.minecraft.item.ItemGroup
 import net.minecraft.item.ItemStack

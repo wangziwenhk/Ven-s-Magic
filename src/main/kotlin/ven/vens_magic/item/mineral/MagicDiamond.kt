@@ -1,4 +1,4 @@
-package com.ven.item.mineral
+package ven.vens_magic.item.mineral
 
 import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.item.Item

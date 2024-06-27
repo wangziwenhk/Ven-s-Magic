@@ -17,19 +17,19 @@
 	"entrypoints": {
 		"main": [
 			{
-				"value": "com.ven.VensMagic",
+				"value": "ven.vens_magic.VensMagic",
 				"adapter": "kotlin"
 			}
 		],
 		"client": [
 			{
-				"value": "com.ven.VensMagicClient",
+				"value": "ven.vens_magic.VensMagicClient",
 				"adapter": "kotlin"
 			}
 		],
 		"fabric-datagen": [
 			{
-				"value": "com.ven.VensMagicDataGenerator",
+				"value": "ven.vens_magic.VensMagicDataGenerator",
 				"adapter": "kotlin"
 			}
 		]

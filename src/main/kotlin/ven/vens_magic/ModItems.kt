@@ -1,6 +1,6 @@
-package com.ven
+package ven.vens_magic
 
-import com.ven.item.mineral.MagicDiamond
+import ven.vens_magic.item.mineral.MagicDiamond
 import net.minecraft.item.Item
 import net.minecraft.registry.Registries
 import net.minecraft.registry.Registry

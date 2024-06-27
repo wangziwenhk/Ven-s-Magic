@@ -1,4 +1,4 @@
-package com.ven
+package ven.vens_magic
 
 import net.fabricmc.api.ClientModInitializer
 
